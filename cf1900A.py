@@ -6,7 +6,7 @@ def fun(n,A):
         for i in A:
                 if i == '#':
                     temp_c = 0
-                
+                else:
                     total += 1
                     temp_c += 1
                     if temp_c > 2:
