@@ -11,7 +11,7 @@ def fun(x,s):
         n+=1
         if s in x:
             return n
-        elif len(x) > len(s)+1:
+        elif len(x) > len(s)*2:
             break
     return -1
 
