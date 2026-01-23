@@ -1,8 +1,11 @@
-for _ in range(int(input())):
+for _ in range(int(input())): #hi1234
     n=int(input())
     A=list(map(int,input().split()))
-    print(n)
-    print(A)
     
-    a=10
-    #a
+    L=[A[0]]
+    for i in range(1,n):
+        if A[i]<A[i-1]:
+            L.append(A[i])
+        L.append(A[i])
+    print(len(L))
+    print(' '.join(map(str,L)))
