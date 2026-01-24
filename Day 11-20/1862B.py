@@ -1,4 +1,4 @@
-for _ in range(int(input())): #hi1234
+for _ in range(int(input())): 
     n=int(input())
     A=list(map(int,input().split()))
     
