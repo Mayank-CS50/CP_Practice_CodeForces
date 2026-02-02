@@ -3,13 +3,14 @@ for _ in range(int(input())):
     A=list(map(int,input().split()))
     pos=A.count(1)
     neg=A.count(-1)
-    reg=neg-pos
-    print(neg,pos,reg)
-    if neg%2==0:
-            countt=(0)
+    if pos>=neg:
+        if neg%2==0:
+            print(0)
+        else:
+            print(1)
     else:
-            countt=(1)
-    if reg<0:
-        print(reg+countt)
-    else:
-        print(reg)
+        diff=neg-pos
+        if (neg-diff)%2==0:
+            print(diff)
+        else:
+            print(diff-1)
