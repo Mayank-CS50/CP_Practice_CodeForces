@@ -1,4 +1,4 @@
-#DONEEEEEE
+#1791C
 
 for _ in range(int(input())):
     n=int(input())
